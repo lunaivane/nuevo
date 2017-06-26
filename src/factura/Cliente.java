@@ -12,9 +12,9 @@ package factura;
 public class Cliente {
     private String nombre;
     private String apellido;
-    private Double dni;
+    private Integer dni;
     private String calle;
-    private Double altura;
+    private Integer altura;
     private Localidad loca;
 
     public String getApellido() {
@@ -25,11 +25,11 @@ public class Cliente {
         this.apellido = apellido;
     }
 
-    public Double getDni() {
+    public Integer getDni() {
         return dni;
     }
 
-    public void setDni(Double dni) {
+    public void setDni(Integer dni) {
         this.dni = dni;
     }
 
@@ -41,13 +41,16 @@ public class Cliente {
         this.calle = calle;
     }
 
-    public Double getAltura() {
+    public Integer getAltura() {
         return altura;
     }
 
-    public void setAltura(Double altura) {
+    public void setAltura(Integer altura) {
         this.altura = altura;
     }
+
+
+
 
     public Localidad getLoca() {
         return loca;

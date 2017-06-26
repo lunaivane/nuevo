@@ -17,6 +17,25 @@ public class Principal {
         
         Cliente unCliente = new Cliente();
         unCliente.setNombre("Manuel");
+        unCliente.setApellido("Perez");
+        unCliente.setCalle("Garbanzos");
+        unCliente.setAltura(3422);
+        
+        Pais unPais = new Pais();
+        unPais.setNombre("Argentina");
+
+        Provincia unaProvincia = new Provincia();
+        unaProvincia.setNombre("BSAS");
+        unaProvincia.setPais(unPais);
+      
+        
+        Partido unPartido = new Partido();
+        unPartido.setNombre("San Martin");
+        unPartido.setProv(unaProvincia);
+        
+        Localidad unaLoca = new Localidad();
+        unaLoca.setNombre("Ballester");
+        unaLoca.setPartido(unPartido);
         
         FormaCobro unFormaCobro = new FormaCobro();
         unFormaCobro.setNombre("Visa");
@@ -50,8 +69,9 @@ public class Principal {
         unaFactura.agregarItem(unItemFacturaCoca);
     
         System.out.println(unaFactura.getItemFactura().get(0).getItem_factura().getPrecio());
-        
-        
+        System.out.println(unCliente.getNombre());
+        System.out.println(unCliente.getLoca());
+        System.out.println(unCliente.getCalle());
     }
  
 }

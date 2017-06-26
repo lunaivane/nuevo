@@ -24,5 +24,9 @@ public class Partido {
     public Provincia getProv() {
         return prov;
     }
+
+    public void setProv(Provincia prov) {
+        this.prov = prov;
+    }
     
 }
