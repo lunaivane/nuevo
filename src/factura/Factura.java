@@ -19,7 +19,7 @@ import java.util.Set;
 public class Factura {
 
     private ArrayList<ItemFactura> itemFactura = new ArrayList();    
-    private FormaCobro formaCobro;
+    private ArrayList<FormaCobro> formacobro = new ArrayList();
     private Cliente cliente;
     private Date fecha;
     private Integer numero;
@@ -30,16 +30,15 @@ public class Factura {
     public void agregarItem(ItemFactura pItemFactura){
        itemFactura.add(pItemFactura);
     }
-    
-    
 
-    public FormaCobro getFormaCobro() {
-        return formaCobro;
+    public ArrayList<FormaCobro> getFormaCobro(){
+        return formacobro;
     }
-
-    public void setFormaCobro(FormaCobro formaCobro) {
-        this.formaCobro = formaCobro;
-    }
+    
+   public void agregarformacobro(FormaCobro pFormaCobro){
+       formacobro.add(pFormaCobro);
+   }
+ 
 
     public Cliente getCliente() {
         return cliente;

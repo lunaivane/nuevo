@@ -28,7 +28,6 @@ public class Principal {
         unaProvincia.setNombre("BSAS");
         unaProvincia.setPais(unPais);
       
-        
         Partido unPartido = new Partido();
         unPartido.setNombre("San Martin");
         unPartido.setProv(unaProvincia);
@@ -39,6 +38,8 @@ public class Principal {
         
         FormaCobro unFormaCobro = new FormaCobro();
         unFormaCobro.setNombre("Visa");
+        
+ 
         
         Item cocaCola = new Item();
         cocaCola.setNombre("Coca cola");
@@ -58,20 +59,23 @@ public class Principal {
         unItemFacturaCoca.setCantidad(10.0);
         unItemFacturaCoca.setItem_factura(cocaCola);
         unItemFacturaCoca.setPrecio(cocaCola.getPrecio());
-        
-        
+      
         
         Factura unaFactura = new Factura();
         unaFactura.setCliente(unCliente);
         unaFactura.setNumero(2354);
-        unaFactura.setFormaCobro(unFormaCobro);
+        unaFactura.agregarformacobro(unFormaCobro);
         unaFactura.agregarItem(unItemFacturaPepsi);
         unaFactura.agregarItem(unItemFacturaCoca);
     
         System.out.println(unaFactura.getItemFactura().get(0).getItem_factura().getPrecio());
         System.out.println(unCliente.getNombre());
-        System.out.println(unCliente.getLoca());
         System.out.println(unCliente.getCalle());
+        System.out.println(unaLoca.getNombre());
+        System.out.println(unPartido.getNombre());
+        System.out.println(unPais.getNombre());
+        System.out.println(unFormaCobro.getNombre());
+        
     }
  
 }
