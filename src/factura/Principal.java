@@ -36,10 +36,12 @@ public class Principal {
         unaLoca.setNombre("Ballester");
         unaLoca.setPartido(unPartido);
         
-        FormaCobro unFormaCobro = new FormaCobro();
-        unFormaCobro.setNombre("Visa");
-        
- 
+        FormaCobro cobroVisa = new FormaCobro();
+        cobroVisa.setNombre("Visa");
+                
+        FormaCobro cobroEfectivo = new FormaCobro();
+        cobroEfectivo.setNombre("Efectivo");
+
         
         Item cocaCola = new Item();
         cocaCola.setNombre("Coca cola");
@@ -48,7 +50,6 @@ public class Principal {
         Item pepsi = new Item();
         pepsi.setNombre("Pepsi");
         pepsi.setPrecio(15.43);
-
         
         ItemFactura unItemFacturaPepsi = new ItemFactura();
         unItemFacturaPepsi.setCantidad(2.0);
@@ -64,7 +65,8 @@ public class Principal {
         Factura unaFactura = new Factura();
         unaFactura.setCliente(unCliente);
         unaFactura.setNumero(2354);
-        unaFactura.agregarformacobro(unFormaCobro);
+        unaFactura.agregarformacobro(cobroVisa);
+        unaFactura.agregarformacobro(cobroEfectivo);
         unaFactura.agregarItem(unItemFacturaPepsi);
         unaFactura.agregarItem(unItemFacturaCoca);
     
@@ -74,7 +76,8 @@ public class Principal {
         System.out.println(unaLoca.getNombre());
         System.out.println(unPartido.getNombre());
         System.out.println(unPais.getNombre());
-        System.out.println(unFormaCobro.getNombre());
+        System.out.println(cobroVisa.getNombre());
+        System.out.println(cobroEfectivo.getNombre());
         
     }
  
