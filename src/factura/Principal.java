@@ -15,11 +15,7 @@ public class Principal {
      */
     public static void main(String[] args) {
         
-        Cliente unCliente = new Cliente();
-        unCliente.setNombre("Manuel");
-        unCliente.setApellido("Perez");
-        unCliente.setCalle("Garbanzos");
-        unCliente.setAltura(3422);
+        Cliente unCliente = new Cliente("Gabriela", "jordania", "av paseo colon", 5423);
         
         Pais unPais = new Pais();
         unPais.setNombre("Argentina");
@@ -64,20 +60,20 @@ public class Principal {
         
         Factura unaFactura = new Factura();
         unaFactura.setCliente(unCliente);
-        unaFactura.setNumero(2354);
+        unaFactura.getNumero();
         unaFactura.agregarformacobro(cobroVisa);
         unaFactura.agregarformacobro(cobroEfectivo);
         unaFactura.agregarItem(unItemFacturaPepsi);
         unaFactura.agregarItem(unItemFacturaCoca);
     
         System.out.println(unaFactura.getItemFactura().get(0).getItem_factura().getPrecio());
-        System.out.println(unCliente.getNombre());
-        System.out.println(unCliente.getCalle());
+        System.out.println("el cliente es "+unCliente.getNombre());
+        System.out.println("vive en "+unCliente.getCalle());
         System.out.println(unaLoca.getNombre());
         System.out.println(unPartido.getNombre());
         System.out.println(unPais.getNombre());
-        System.out.println(cobroVisa.getNombre());
-        System.out.println(cobroEfectivo.getNombre());
+        System.out.println("sus formas de cobro son "+cobroVisa.getNombre());
+        System.out.println("y "+cobroEfectivo.getNombre());
         
     }
  

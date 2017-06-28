@@ -23,7 +23,8 @@ public class Factura {
     private Cliente cliente;
     private Date fecha;
     private Integer numero;
-
+    
+    
     public ArrayList<ItemFactura> getItemFactura() {
         return itemFactura;
     }
@@ -63,7 +64,6 @@ public class Factura {
     public void setNumero(Integer numero) {
         this.numero = numero;
     }
-    
        
     
 }

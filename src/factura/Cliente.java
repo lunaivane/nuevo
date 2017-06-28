@@ -17,57 +17,49 @@ public class Cliente {
     private Integer altura;
     private Localidad loca;
 
-    public String getApellido() {
-        return apellido;
+    public Cliente(String nombre, String apellido, Integer altura) {
+        this.nombre = nombre;
+        this.apellido = apellido;
     }
 
-    public void setApellido(String apellido) {
+    public Cliente(String nombre, String apellido, String calle, Integer altura) {
+        this.nombre = nombre;
         this.apellido = apellido;
+        this.calle = calle;
+    }
+
+    public Cliente(String nombre, String apellido, Integer dni, String calle, Integer altura, Localidad loca) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.dni = dni;
+        this.calle = calle;
+        this.altura = altura;
+        this.loca = loca;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
     }
 
     public Integer getDni() {
         return dni;
     }
 
-    public void setDni(Integer dni) {
-        this.dni = dni;
-    }
-
     public String getCalle() {
         return calle;
-    }
-
-    public void setCalle(String calle) {
-        this.calle = calle;
     }
 
     public Integer getAltura() {
         return altura;
     }
 
-    public void setAltura(Integer altura) {
-        this.altura = altura;
-    }
-
-
-
-
     public Localidad getLoca() {
         return loca;
     }
 
-    public void setLoca(Localidad loca) {
-        this.loca = loca;
-    }
-    
-            
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-    
     
 }
