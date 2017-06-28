@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package factura;
+package negocio;
 
 /**
  *
@@ -32,11 +32,11 @@ public class Principal {
         unaLoca.setNombre("Ballester");
         unaLoca.setPartido(unPartido);
         
-        FormaCobro cobroVisa = new FormaCobro();
-        cobroVisa.setNombre("Visa");
+        FormaCobro formacobro1 = new FormaCobro();
+        formacobro1.setNombre("Visa");
                 
-        FormaCobro cobroEfectivo = new FormaCobro();
-        cobroEfectivo.setNombre("Efectivo");
+        FormaCobro formacobro2 = new FormaCobro();
+        formacobro2.setNombre("Efectivo");
 
         
         Item cocaCola = new Item();
@@ -61,8 +61,8 @@ public class Principal {
         Factura unaFactura = new Factura();
         unaFactura.setCliente(unCliente);
         unaFactura.getNumero();
-        unaFactura.agregarformacobro(cobroVisa);
-        unaFactura.agregarformacobro(cobroEfectivo);
+        unaFactura.agregarformacobro(formacobro1);
+        unaFactura.agregarformacobro(formacobro2);
         unaFactura.agregarItem(unItemFacturaPepsi);
         unaFactura.agregarItem(unItemFacturaCoca);
     
@@ -72,8 +72,8 @@ public class Principal {
         System.out.println(unaLoca.getNombre());
         System.out.println(unPartido.getNombre());
         System.out.println(unPais.getNombre());
-        System.out.println("sus formas de cobro son "+cobroVisa.getNombre());
-        System.out.println("y "+cobroEfectivo.getNombre());
+        System.out.println("sus formas de cobro son "+formacobro1.getNombre());
+        System.out.println("y "+formacobro2.getNombre());
         
     }
  

@@ -3,30 +3,27 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package factura;
+package negocio;
 
-/**
- *
- * @author Sello
- */
-public class Partido {
+public class Item {
     private String nombre;
-    private Provincia prov;
+    private Double precio;
 
     public String getNombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombre(String pnombre) {
+        nombre = pnombre;
     }
 
-    public Provincia getProv() {
-        return prov;
+    public Double getPrecio() {
+        return precio;
     }
 
-    public void setProv(Provincia prov) {
-        this.prov = prov;
+    public void setPrecio(Double pprecio) {
+        this.precio = pprecio;
+        
     }
     
 }

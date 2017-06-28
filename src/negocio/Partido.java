@@ -3,14 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package factura;
+package negocio;
 
 /**
  *
  * @author Sello
  */
-public class Pais {
+public class Partido {
     private String nombre;
+    private Provincia prov;
 
     public String getNombre() {
         return nombre;
@@ -19,6 +20,13 @@ public class Pais {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    
+
+    public Provincia getProv() {
+        return prov;
+    }
+
+    public void setProv(Provincia prov) {
+        this.prov = prov;
+    }
     
 }
